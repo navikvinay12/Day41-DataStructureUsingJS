@@ -89,3 +89,20 @@ if (num != 1)
     takingArray.push(num);
 }
 console.log(takingArray);
+//--------------------------------------------------------
+//Q4)Write a Program to show Sum of three Integer adds to ZERO
+let arr =[1, 2, 3, -3, -2, -1, 0];
+for(i=0;i<arr.length;i++)
+{
+  for(j=i+1;j<arr.length;j++)
+  {
+    for(k=j+1;k<arr.length;k++)
+    {
+      if(arr[i]+arr[j]+arr[k]==0)
+      {
+        console.log("Possible combinations are as Follows :");
+        console.log(`${arr[i]} + ${arr[j]} + ${arr[k]} = 0`)
+      }
+    }
+  }
+}
