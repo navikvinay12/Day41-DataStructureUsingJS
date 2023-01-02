@@ -106,3 +106,20 @@ for(i=0;i<arr.length;i++)
     }
   }
 }
+//---------------------------------------------------
+//Q5)Take a range from 0 – 100,find the digits that are repeated twice like 33, 77, etc and store them in an array
+function FindDoubleDigits(start,end)
+{
+  let doubleDigits=[];
+  for(let i=start;i<=end;i++)
+  {
+    let str=i.toString();
+    if(str[0]==str[1])
+    {
+      doubleDigits.push(i)
+    }
+  }
+  return doubleDigits;
+}
+console.log(FindDoubleDigits(0,100));
+//_______________________________________________________________________________________
