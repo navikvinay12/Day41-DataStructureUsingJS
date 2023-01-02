@@ -71,3 +71,21 @@ function SecondSmallest(numbers)
   }
   console.log("There is No Second Smallest element");
 }
+//----------------------------------------
+//Q3)Extend the Prime Factorization Program to store all the Prime Factors of a number n into an array and finally display the output.
+var numReceived =prompt("Prime Factorization Program! \nPlease enter any number to find Prime factors");
+var num=parseInt(numReceived);
+var takingArray=[];
+for (let div = 2; div * div <= num; div++)
+{
+    while (num % div == 0)
+    {
+        num = num / div;
+        takingArray.push(div);
+    }
+}
+if (num != 1)
+{
+    takingArray.push(num);
+}
+console.log(takingArray);
